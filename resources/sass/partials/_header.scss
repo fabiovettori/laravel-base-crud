@@ -1,0 +1,16 @@
+header {
+    padding: 15px 0;
+
+    ul {
+        li {
+            a {
+                color: $font_secondary_color;
+
+                &:hover {
+                    color: $font_secondary_color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

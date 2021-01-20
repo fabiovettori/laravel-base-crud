@@ -17,10 +17,10 @@
         <script src=" {{ 'js/app.js' }} " charset="utf-8"></script>
     </head>
     <body>
-        @extends('partials.header')
+        @include('partials.header')
 
         @yield('content')
 
-        @extends('partials.footer')
+        @include('partials.footer')
     </body>
 </html>

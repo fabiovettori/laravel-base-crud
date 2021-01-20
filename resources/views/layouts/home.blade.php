@@ -3,5 +3,14 @@
 @section('title', 'Home')
 
 @section('content')
-    <h3>home</h3>
+    <section id="home_top_banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="text-uppercase">saldi</p>
+                    <p class="text-uppercase">ulteriori riduzioni</p>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
