@@ -9,6 +9,7 @@
                 <div class="col-lg-12">
                     <h3 class="pb-4">Create new product</h3>
                     <form action="{{ route('men.store') }}" method="POST">
+                        @csrf
                         <div class="form-group">
                             <label>Name</label>
                             <input type="text" name="name" class="form-control">
@@ -17,7 +18,7 @@
                             <textarea class="form-control" name="description" rows="3"></textarea>
 
                             <label>Details</label>
-                            <input type="email" name="details" class="form-control">
+                            <input type="txt" name="details" class="form-control">
 
                             <label>Price</label>
                             <input type="text" name="price" class="form-control">
@@ -25,6 +26,8 @@
                             <label>Poster Image</label>
                             <input type="file" name="poster_image" class="form-control">
                         </div>
+
+                        <button type="submit" class="btn btn-success">Submit</button>
                     </form>
                 </div>
             </div>

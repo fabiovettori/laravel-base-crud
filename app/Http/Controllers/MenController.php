@@ -41,7 +41,18 @@ class MenController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+
+        $new_product = new Man;
+        $new_product->name = $data['name'];
+        $new_product->description = $data['description'];
+        $new_product->details = $data['details'];
+        $new_product->price = $data['price'];
+        $new_product->poster_image = $data['poster_image'];
+
+        $new_product->save();
+
+        return redirect()->route('men.index');
     }
 
     /**
