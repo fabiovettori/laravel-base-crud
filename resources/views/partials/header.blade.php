@@ -6,8 +6,8 @@
             </div>
 
             <ul class="col-lg-9 d-flex list-unstyled justify-content-center m-0">
-                <li class="text-uppercase"><a href=" {{ route('homepage') }} ">home</a></li>
-                <li class="text-uppercase ml-5"><a href=" {{ route('men.products') }} ">men</a></li>
+                <li class="text-uppercase"><a href=" {{ route('home') }} ">home</a></li>
+                <li class="text-uppercase ml-5"><a href=" {{ route('men.index') }} ">men</a></li>
             </ul>
         </div>
     </div>

@@ -16167,3 +16167,14 @@ footer {
 #home_top_banner p {
   margin: 0;
 }
+
+#men_products .tile {
+  padding: 10px;
+  width: calc(100% / 4);
+}
+#men_products .tile img {
+  width: 100%;
+}
+#men_products .tile p {
+  margin: 0;
+}

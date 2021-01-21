@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'Homecontroller@index')->name('homepage');
+Route::get('/', 'Homecontroller@index')->name('home'); //rotta statica -> utilizzo il comando di route basic
 
-Route::get('/men', 'Homecontroller@men')->name('men.products');
+Route::resource('/men', 'MenController');
