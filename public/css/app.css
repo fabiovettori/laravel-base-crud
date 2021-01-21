@@ -16168,13 +16168,14 @@ footer {
   margin: 0;
 }
 
-#men_products .tile {
-  padding: 10px;
-  width: calc(100% / 4);
+#men_products img {
+  max-width: 150px;
 }
-#men_products .tile img {
-  width: 100%;
-}
-#men_products .tile p {
+#men_products td {
+  font-size: 14px;
+  font-weight: 300;
   margin: 0;
+}
+#men_products .btn {
+  width: 150px;
 }

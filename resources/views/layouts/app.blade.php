@@ -11,10 +11,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
         {{-- CSS --}}
-        <link rel="stylesheet" href=" {{ 'css/app.css' }} ">
+        <link rel="stylesheet" href=" {{ asset('css/app.css') }} ">
 
         {{-- JS --}}
-        <script src=" {{ 'js/app.js' }} " charset="utf-8"></script>
+        <script src=" {{ asset('js/app.js') }} " charset="utf-8"></script>
     </head>
     <body>
         @include('partials.header')

@@ -4,19 +4,41 @@
 
 @section('content')
     <section id="men_products" class="py-5">
-        <div class="container-fluid">
+        <div class="container-lg">
             <div class="row">
-                <div class="col-lg-12 d-flex flex-wrap">
-                    @foreach ($men_products as $product)
-                        <div class="tile">
-                            <a href=" {{ route('men.show', ['man'=> $product->id]) }} ">
-                                <img src=" {{ asset('images/' . $product->poster_image) }}" alt=" {{ $product->name }}">
-                            </a>
-                            <p>Polo Ralph Lauren</p>
-                            <p> {{ $product->name }} </p>
-                            <p> {{ number_format($product->price, 2, '.', '') }} </p>
-                        </div>
-                    @endforeach
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Details</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Preview</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach ($men_products as $product)
+                            <tr>
+                                <th scope="row"> {{ $product->id }} </th>
+                                <td> {{ $product->name }} </td>
+                                <td> {{ $product->description }} </td>
+                                <td> {{ $product->details }} </td>
+                                <td> {{ number_format($product->price, 2, '.', '') }}€ </td>
+                                <td>
+                                    <a href=" {{ route('men.show', ['man'=> $product->id]) }} ">
+                                        <img src=" {{ asset('images/' . $product->poster_image) }}" alt=" {{ $product->name }}">
+                                    </a>
+                                 </td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-right">
+                    <button class="btn btn-success" type="button" name="button">Add product</button>
                 </div>
             </div>
         </div>

@@ -30,7 +30,7 @@ class MenController extends Controller
      */
     public function create()
     {
-        //
+    
     }
 
     /**
@@ -53,7 +53,7 @@ class MenController extends Controller
     public function show($id)
     {
         $product = Man::find($id);
-        
+
         if ($product) {
 
             $data = [
