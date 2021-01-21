@@ -38,7 +38,7 @@
 
             <div class="row">
                 <div class="col-lg-12 text-right">
-                    <button class="btn btn-success" type="button" name="button">Add product</button>
+                    <a class="btn btn-success" href="{{ route('men.create') }}">Add product</a>
                 </div>
             </div>
         </div>

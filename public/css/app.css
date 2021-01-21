@@ -16179,3 +16179,11 @@ footer {
 #men_products .btn {
   width: 150px;
 }
+
+#products-table input {
+  margin-bottom: 10px;
+}
+#products-table input:last-of-type {
+  padding-left: 0;
+  border: none;
+}

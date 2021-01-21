@@ -13,3 +13,14 @@
         width: 150px;
     }
 }
+
+#products-table {
+    input {
+        margin-bottom: 10px;
+
+        &:last-of-type {
+            padding-left: 0;
+            border: none;
+        }
+    }
+}

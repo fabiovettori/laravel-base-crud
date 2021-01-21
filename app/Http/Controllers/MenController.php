@@ -30,7 +30,7 @@ class MenController extends Controller
      */
     public function create()
     {
-    
+        return view('men.create');
     }
 
     /**
